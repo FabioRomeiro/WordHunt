@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+	<div class="home">
+		<GridInput v-model="grid" :width="15" :height="15" />
+	</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import GridInput from "@/components/GridInput.vue";
 
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
+	name: "Home",
+	components: {
+		GridInput
+	},
+	methods: {
+		updateGrid(grid) {
+			this.grid = grid;
+		}
+	},
+	data() {
+		return {
+			grid: null
+		}
+	}
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+</style>
