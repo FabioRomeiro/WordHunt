@@ -43,7 +43,7 @@ function devhelp {
     echo -e "                  Example:"
     echo -e "                   dk ${RED}bash${RESTORE}"
     echo -e ""
-    echo -e "${GREEN}dkrun_prod${RESTORE}        Starts django and nuxt (dockerized) in production mode"
+    echo -e "${GREEN}dkrun_prod${RESTORE}        Starts django and vue (dockerized) in production mode"
     echo -e ""
     echo -e "${GREEN}deploy_prod${RESTORE}       Connects to the production server and deploys it"
     echo -e ""
